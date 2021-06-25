@@ -1,0 +1,100 @@
+// // Colors
+
+// $black:        hsl(0, 0%, 4%) !default
+// $black-bis:    hsl(0, 0%, 7%) !default
+// $black-ter:    hsl(0, 0%, 14%) !default
+$black: $fave-black;
+$black-bis: $fave-black-light;
+$black-ter: $fave-black-lighter;
+
+// $grey-darker:  hsl(0, 0%, 21%) !default
+// $grey-dark:    hsl(0, 0%, 29%) !default
+// $grey:         hsl(0, 0%, 48%) !default
+// $grey-light:   hsl(0, 0%, 71%) !default
+// $grey-lighter: hsl(0, 0%, 86%) !default
+$grey-darker: $fave-steelblue;
+$grey-dark: $fave-steelblue-light;
+$grey: $fave-steelblue;
+$grey-light: $fave-grey;
+$grey-lighter: $fave-grey-light;
+
+// $white-ter:    hsl(0, 0%, 96%) !default
+// $white-bis:    hsl(0, 0%, 98%) !default
+// $white:        hsl(0, 0%, 100%) !default
+$white-ter: $fave-grey-lighter;
+
+// $orange:       hsl(14,  100%, 53%) !default
+// $yellow:       hsl(48,  100%, 67%) !default
+// $green:        hsl(141, 71%,  48%) !default
+// $turquoise:    hsl(171, 100%, 41%) !default
+// $cyan:         hsl(204, 86%,  53%) !default
+// $blue:         hsl(217, 71%,  53%) !default
+// $purple:       hsl(271, 100%, 71%) !default
+// $red:          hsl(348, 100%, 61%) !default
+$orange: $fave-orange;
+$yellow: $fave-yellow;
+$green: $fave-green;
+$turquoise: $fave-turquoise;
+$cyan: $fave-cyan;
+$blue: $fave-blue;
+$purple: $fave-purple;
+$red: $fave-red;
+$pink: $fave-pink;
+$green-light: hsl(120, 37%, 93%) !default;
+$green-dark: hsl(121, 47%, 38%) !default;
+$blue-light: hsl(196, 61%, 93%) !default;
+$blue-dark: hsl(196, 59%, 35%) !default;
+
+// // Typography
+
+// $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+// $family-monospace: monospace !default
+// $render-mode: optimizeLegibility !default
+$family-sans-serif: $fave-family-sans-serif;
+
+// $size-1: 3rem !default
+// $size-2: 2.5rem !default
+// $size-3: 2rem !default
+// $size-4: 1.5rem !default
+// $size-5: 1.25rem !default
+// $size-6: 1rem !default
+// $size-7: 0.75rem !default
+$size-1: $fave-size-1;
+$size-2: $fave-size-2;
+$size-3: $fave-size-3;
+$size-4: $fave-size-4;
+$size-5: $fave-size-5;
+$size-6: $fave-size-6;
+$size-7: $fave-size-7;
+
+// $weight-light: 300 !default
+// $weight-normal: 400 !default
+// $weight-medium: 500 !default
+// $weight-semibold: 600 !default
+// $weight-bold: 700 !default
+
+// // Responsiveness
+
+// // The container horizontal gap, which acts as the offset for breakpoints
+// $gap: 32px !default
+// // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+// $tablet: 769px !default
+// // 960px container + 4rem
+// $desktop: 960px + (2 * $gap) !default
+// // 1152px container + 4rem
+// $widescreen: 1152px + (2 * $gap) !default
+// // 1344px container + 4rem
+// $fullhd: 1344px + (2 * $gap) !default
+
+// // Miscellaneous
+
+// $easing: ease-out !default
+// $radius-small: 2px !default
+// $radius: 3px !default
+// $radius-large: 5px !default
+// $radius-rounded: 290486px !default
+// $speed: 86ms !default
+
+// // Flags
+
+// $variable-columns: true !default

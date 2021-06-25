@@ -1,0 +1,52 @@
+@import '../mixins';
+
+.navbarMenu {
+  position: relative;
+  justify-content: space-between;
+  [data-nav-link]:hover {
+    cursor: pointer;
+    background-color: #fafafa;
+  }
+  &.center {
+    justify-content: center;
+  }
+  .navbarHeader {
+    color: #5c5c5c;
+    &.isFaded {
+      color: #fff;
+    }
+    @include for-desktop {
+      font-weight: 500;
+      font-size: 1.428rem;
+    }
+  }
+  .cashbacksBacklink {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @include for-desktop {
+      display: none !important;
+    }
+  }
+}
+
+a.myfaveButton {
+  position: absolute;
+  right: 7vw;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #48b049;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.1428rem;
+  line-height: 1.357rem;
+  color: #ffffff;
+  padding: 0 2.714rem;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}

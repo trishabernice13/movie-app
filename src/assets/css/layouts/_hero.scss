@@ -1,0 +1,18 @@
+.hero {
+  &.is-fullheight {
+    &.has-items-from-start {
+      .hero-body {
+        align-items: flex-start;
+      }
+
+      &.has-items-centered {
+        .hero-body {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  &.is-default {
+    background-color: $fave-grey-lightest;
+  }
+}

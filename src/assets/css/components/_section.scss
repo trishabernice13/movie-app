@@ -1,0 +1,14 @@
+.section {
+  &.is-mobile {
+    padding: 1rem 0.75rem;
+  }
+  &.is-white {
+    background: white;
+  }
+  &.is-branded {
+    background: $branded;
+  }
+  &.is-success {
+    background: $success;
+  }
+}

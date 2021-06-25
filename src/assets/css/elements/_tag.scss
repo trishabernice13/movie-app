@@ -1,0 +1,12 @@
+.tag:not(body) {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    &.is-#{$name}.is-outlined {
+      background-color: transparent;
+      border: 1px solid $color;
+      color: $color;
+    }
+  }
+}

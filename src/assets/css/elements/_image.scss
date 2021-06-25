@@ -1,0 +1,36 @@
+.image {
+  img.is-soft-rounded {
+    border-radius: $radius;
+  }
+
+  img.is-outlined {
+    border: 1px solid #e4e4e4;
+  }
+
+  &.is-8by5,
+  &.is-170by173,
+  &.is-31by14,
+  &.is-136by93 {
+    img {
+      @extend %overlay;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &.is-8by5 {
+    padding-top: (5 / 8) * 100%;
+  }
+
+  &.is-170by173 {
+    padding-top: (170 / 173) * 100%;
+  }
+
+  &.is-31by14 {
+    padding-top: (14 / 31) * 100%;
+  }
+
+  &.is-136by93 {
+    padding-top: (93 / 136) * 100%;
+  }
+}

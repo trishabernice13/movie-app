@@ -1,0 +1,279 @@
+.navbar {
+  .navbar-item {
+    fill: $navbar-item-color;
+
+    &:hover {
+      fill: $navbar-item-hover-color;
+    }
+
+    &.is-active {
+      fill: $navbar-item-active-color;
+    }
+
+    &.is {
+      &-stateless {
+        &:hover {
+          background-color: inherit;
+        }
+      }
+      &-dense {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &.is-bottom-bar {
+    .navbar-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &.is-fixed-top {
+    box-shadow: 0 0.25rem 0.25rem 0 rgba($black, 0.1);
+  }
+
+  &.is-fixed-bottom {
+    box-shadow: 0 -0.25rem 0.25rem 0 rgba($black, 0.1);
+  }
+
+  &.is-faded {
+    background: linear-gradient(black, transparent);
+    box-shadow: none;
+
+    .navbar-menu,
+    .navbar-item {
+      background: transparent;
+    }
+  }
+
+  &.is-dense {
+    .new-to-menu-popup {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0.7142857142857143rem;
+      background-color: $pink;
+      color: $white;
+      font-size: 1rem;
+      font-weight: 500;
+      height: 2.285714285714286rem;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      &:before {
+        content: '';
+        border-right: 1px solid $pink;
+        border-top: 1px solid $pink;
+        background-color: $pink;
+        transform: rotate(-45deg);
+        width: 0.8571428571428571rem;
+        height: 0.8571428571428571rem;
+        position: absolute;
+        right: 1.357142857142857rem;
+        top: -0.4285714285714286rem;
+      }
+
+      > .close-menu {
+        background-color: #2ba0ca;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        pointer-events: auto;
+        border: none;
+        border-radius: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        height: 100%;
+        width: 2rem;
+        > img {
+          width: 0.7142857142857143rem;
+        }
+      }
+      .new-to-menu-caption {
+        padding: 0 0.6428571428571429rem;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        > img {
+          height: 1.571428571428571rem;
+          margin-left: 0.25rem;
+        }
+      }
+    }
+    .overlay-background {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+
+      .overlay-menu {
+        background-color: $white;
+
+        h4 {
+          color: $black;
+          font-size: 1.142857142857143rem;
+          line-height: normal;
+          text-align: center;
+          margin-bottom: 1.714285714285714rem;
+        }
+
+        > .only-app-wrapper,
+        > .favebiz-wrapper {
+          padding: 1.142857142857143rem;
+          .button.is-large {
+            font-size: 1rem;
+            height: 3rem;
+          }
+        }
+        > .only-app-wrapper {
+          padding-top: 1.714285714285714rem;
+          .only-app-icons {
+            display: flex;
+            color: $pink;
+            margin-bottom: 1.714285714285714rem;
+            justify-content: center;
+            > div {
+              margin-right: 1.892857142857143rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              > img {
+                height: 2.285714285714286rem;
+                margin-bottom: 0.5714285714285714rem;
+              }
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+          .only-app-button {
+            background-color: $pink;
+            border-color: $pink;
+            color: $white;
+            > img {
+              height: 1.142857142857143rem;
+              margin-right: 0.4285714285714286rem;
+            }
+          }
+        }
+        .favebiz-wrapper {
+          .favebiz-button {
+            color: $pink;
+            border: 1px solid $pink;
+            > img {
+              height: 1.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        > .divider {
+          background-color: #f0f0f0;
+          height: 0.7142857142857143rem;
+        }
+      }
+    }
+    .navbar {
+      &-item {
+        cursor: pointer;
+        padding: 0.5rem 0;
+        --icon-padding: 0.7142857142857143rem;
+        &:focus {
+          background-color: inherit;
+        }
+
+        .search-icon {
+          color: $pink;
+        }
+
+        &.search-box {
+          padding-left: 0.2857142857142857rem;
+          padding-right: 0.2857142857142857rem;
+        }
+
+        &.switch-city {
+          padding-left: var(--icon-padding);
+          padding-right: var(--icon-padding);
+        }
+
+        &:first-child {
+          padding-left: 1.714285714285714rem;
+          padding-right: 1.142857142857143rem;
+        }
+        &:last-child {
+          margin-right: var(--icon-padding);
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .navbar-item-icon {
+          width: 1.428571428571429rem;
+        }
+      }
+    }
+  }
+
+  &.is-mobile {
+    .navbar-menu {
+      background-color: inherit;
+    }
+
+    &,
+    .navbar-menu,
+    .navbar-end,
+    .navbar-start {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    .navbar-item,
+    .navbar-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-menu {
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .navbar-start {
+      justify-content: flex-start;
+      margin-right: auto;
+    }
+
+    .navbar-end {
+      justify-content: flex-end;
+      margin-right: auto;
+    }
+
+    @each $name, $pair in $colors {
+      $color: nth($pair, 1);
+      $color-invert: nth($pair, 2);
+
+      &.is-#{$name} {
+        .navbar-item,
+        .navbar-link {
+          color: $color-invert;
+        }
+
+        .navbar-item,
+        .navbar-link {
+          &:hover,
+          &.is-active {
+            background-color: darken($color, 5%);
+            color: $color-invert;
+          }
+        }
+
+        .navbar-link {
+          &:after {
+            border-color: $color-invert;
+          }
+        }
+      }
+    }
+  }
+}
